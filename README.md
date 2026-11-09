@@ -1,0 +1,70 @@
+TypeScript Assignment
+
+Overview: This project contains solutions to 8 TypeScript problems covering basic to advanced TypeScript concepts, including functions, union types, tuples, generics, interfaces, key constraints, classes, inheritance, and asynchronous programming.
+Technologies Used:
+1. TypeScript
+2. TypeScript Compiler (tsc)
+
+Solutions and Problems
+
+1. Functions with Default Parameters
+Function Name: multiplyValue()
+Parameters: value, multiplier (with default value of 2).
+Returns: multiplication of value and multiplier.
+
+2. Union Types and Type Narrowing
+Function Name: processInput()
+Type of parameter: string, number or boolean.
+Use: typeof operator to narrow the type.
+- String: remove leading and trailing whitespace and convert to lowercase.
+- Number: multiply the number by 10.
+- Boolean: return "Active" or "Inactive".
+
+3. Readonly Tuple
+Function Name: formatCoordinate()
+Parameter: readonly tuple that contains latitude, longitude, and the name of the location.
+Use: array destructuring in the function.
+Returns: formatted string with the location description.
+Enforces immutability of tuple elements.
+
+4. Generics and Rest Parameters
+Function Name: concatenateArrays()
+Generics: uses <T> type parameter.
+Rest Parameters: accepts multiple arrays.
+Combines all of the input arrays into one with the help of flat() method.
+Keeps the type of the original element.
+
+5. Interface and Array Filter Method
+Interface Name: Course
+Function Name: getPopularCourses()
+Defines the structure of the course with an interface.
+Filters the array of published courses.
+Returns the courses with student enrollment equal to or higher than the minimum required.
+
+6. Generics and Key Constraint
+Function Name: pluckValues()
+Uses two generics: T, K.
+Constraints K with keyof type constraint.
+Plucks the values from the property of K.
+Returns the array with values from the property K.
+
+7. Classes, Inheritance, Access Modifiers
+Classes: Employee and Manager
+Object Oriented Programming: class-based approach to coding.
+Access modifiers: the name of the employee is declared as protected and the base salary and department as private.
+Inheritance: use of extends keyword.
+Parent constructor call: uses super().
+
+8. Asynchronous Programming through Promise
+Function: validateAgeAsync()
+Uses Promise<string> for handling asynchronous processes.
+Calls the resolve() method if the age is equal to or more than 18.
+
+Blog File:
+[type-vs-interface-1](type-vs-interface-1.md)
+[type-hierarchy-work-2](type-hierarchy-work-2.md)
+
+
+Calls the reject() method if the age is less than 18.
+Uses setTimeout() to create a delay period.
+Deals with both success and error cases asynchronously.
