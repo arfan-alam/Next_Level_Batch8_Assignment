@@ -59,12 +59,10 @@ Parent constructor call: uses super().
 Function: validateAgeAsync()
 Uses Promise<string> for handling asynchronous processes.
 Calls the resolve() method if the age is equal to or more than 18.
-
-Blog File:
-[type-vs-interface-1](type-vs-interface-1.md)
-[type-hierarchy-work-2](type-hierarchy-work-2.md)
-
-
 Calls the reject() method if the age is less than 18.
 Uses setTimeout() to create a delay period.
 Deals with both success and error cases asynchronously.
+
+Blog File:
+[type-vs-interface-1](type-vs-interface-1.md) ,
+[type-hierarchy-work-2](type-hierarchy-work-2.md)
